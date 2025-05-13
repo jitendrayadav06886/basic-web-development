@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jitendra's Website - Counter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      #count {
+        font-size: 2rem;
+        margin: 10px 0;
+        color: #333;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Button Press Counter</h1>
+    <div id="count">Pressed: 0 times</div>
+    <button onclick="incrementCount()">Press Me</button>
+
+    <script>
+      let count = 0;
+
+      function incrementCount() {
+        count++;
+        document.getElementById("count").innerText = `Pressed: ${count} times`;
+      }
+    </script>
+  </body>
+</html>

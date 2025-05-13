@@ -2,38 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jitendra's Website - Counter</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         font-family: Arial, sans-serif;
-        background: #f4f4f4;
+        background: lightblue;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 100vh;
         margin: 0;
+        padding: 16px;
+        text-align: center;
       }
 
       h1 {
+        font-size: 1.8rem;
         margin-bottom: 20px;
       }
 
       #count {
-        font-size: 2rem;
-        margin: 10px 0;
+        font-size: 1.5rem;
+        margin: 12px 0;
         color: #333;
       }
 
       button {
-        padding: 10px 20px;
-        font-size: 1rem;
+        padding: 14px 28px;
+        font-size: 1.2rem;
         background-color: #007bff;
         color: white;
         border: none;
-        border-radius: 8px;
+        border-radius: 10px;
         cursor: pointer;
-        transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        width: 100%;
+        max-width: 300px;
+      }
+
+      button:active {
+        transform: scale(0.98);
       }
 
       button:hover {
